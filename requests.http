@@ -1,4 +1,4 @@
-GET http://localhost:3000/songs
+GET http://localhost:3000/songs?id=3
 
 ### show song
 GET http://localhost:3000/songs/3
