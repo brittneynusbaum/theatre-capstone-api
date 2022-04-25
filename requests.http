@@ -1,4 +1,4 @@
-GET http://localhost:3000/songs?songwriter=lisa kron
+GET http://localhost:3000/songs?songwriter=lisa
 
 ### show song
 GET http://localhost:3000/songs/3
