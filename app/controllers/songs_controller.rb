@@ -1,8 +1,10 @@
 class SongsController < ApplicationController
 
   def index
-    songwriter = Songwriter.where(songwriter: params[:songwriter])
-    songs = Song.where(songwriter_id: [:songwriter.id])
+    songwriter = Songwriter.find_by(composer: params[:composer]) 
+    # songwriters = Songwriter.all
+    # p songwriters
+    songs = Song.where(songwriter_id: songwriter.id)
     render json: songs.as_json
   end
 
