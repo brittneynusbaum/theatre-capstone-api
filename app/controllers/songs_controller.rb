@@ -4,8 +4,12 @@ class SongsController < ApplicationController
     songwriter = Songwriter.find_by(composer: params[:composer]) 
     # songwriters = Songwriter.all
     # p songwriters
-    songs = Song.where(songwriter_id: songwriter.id)
-    render json: songs.as_json
+    show = Show.find_by(title: params[:title])
+    p songwriter
+    p show
+    # songs = Song.where(songwriter_id: songwriter.id).or(Song.where(show_id: show.id || show_id: nil)
+    songs = Song.where(songwriter_id: songwriter.id).or(Song.where(show_id: show.id)) unless show_id.blank?
+    render json: songs.order(:show_id).as_json
   end
 
   def show
