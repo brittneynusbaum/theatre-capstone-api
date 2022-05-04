@@ -7,10 +7,11 @@ class SongsController < ApplicationController
     show = Show.find_by(title: params[:title])
     p songwriter
     p show
-    # songs = Song.where(songwriter_id: songwriter.id).or(Song.where(show_id: show.id || show_id: nil)
-    songs = Song.where(songwriter_id: params[:songwriter.id]).or(Song.where(show_id: params[:show.id]))
+    songs1 = Song.where(songwriter_id: songwriter.id)
+    songs2 = Song.where(show_id: show.id)
     # songs = Song.all
-    render json: songs.order(:show_id).as_json
+    songs = (songs1 + songs2).uniq
+    render json: songs.as_json
   end
 
   
