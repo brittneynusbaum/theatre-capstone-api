@@ -1,4 +1,10 @@
-GET http://localhost:3000/songs?composer=Lisa+Kron
+GET http://localhost:3000/songs
 
 ### show song
 GET http://localhost:3000/songs/3
+
+### Index songwriters
+GET http://localhost:3000/songwriters
+
+### Index shows
+GET http://localhost:3000/shows

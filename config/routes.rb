@@ -6,5 +6,8 @@ Rails.application.routes.draw do
 
   get "/songs" => "songs#index"
   get "/songs/:id" => "songs#show"
-  
+
+  get "/songwriters" => "songwriters#index"
+
+  get "/shows" => "shows#index"
 end
