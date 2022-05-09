@@ -12,3 +12,6 @@ GET http://localhost:3000/shows
 
 ### Index genres
 GET http://localhost:3000/genres
+
+### Index tempos
+GET http://localhost:3000/tempos

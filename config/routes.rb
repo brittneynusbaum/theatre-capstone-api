@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get "/shows" => "shows#index"
 
   get "/genres" => "genres#index"
+
+  get "tempos" => "tempos#index"
 end
