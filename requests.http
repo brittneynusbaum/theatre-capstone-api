@@ -1,4 +1,5 @@
-GET http://localhost:3000/songs?composer=Lisa+Kron&title=Into+the+Woods
+GET http://localhost:3000/songs
+
 
 ### show song
 GET http://localhost:3000/songs/3
