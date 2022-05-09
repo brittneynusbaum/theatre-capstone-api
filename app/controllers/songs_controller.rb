@@ -8,14 +8,15 @@ class SongsController < ApplicationController
     
     composer = params[:composer].split(",")
     # p composer.length
-    
     # p params[:title]
     
     if composer.length > 1
-      songwriter1 = Songwriter.find_by(composer: composer[0]) 
+      songwriter1 = Songwriter.find_by(composer: composer[0]) # need to send array of composers to next if statement but
       songwriter2 = Songwriter.find_by(composer: composer[1]) 
+      
     else
       songwriter = Songwriter.find_by(composer: composer) 
+      
     end
 
     if songwriter != nil && show != nil
