@@ -9,3 +9,6 @@ GET http://localhost:3000/songwriters
 
 ### Index shows
 GET http://localhost:3000/shows
+
+### Index genres
+GET http://localhost:3000/genres

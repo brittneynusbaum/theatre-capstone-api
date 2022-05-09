@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get "/songwriters" => "songwriters#index"
 
   get "/shows" => "shows#index"
+
+  get "/genres" => "genres#index"
 end
