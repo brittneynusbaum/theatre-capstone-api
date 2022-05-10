@@ -26,3 +26,12 @@ content-type: application/json
   "password": "password",
   "password_confirmation": "password"
 }
+
+### User log in
+POST http://localhost:3000/sessions
+content-type: application/json
+
+{
+  "email": "frodo@email.com",
+  "password": "password"
+}
