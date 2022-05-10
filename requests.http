@@ -38,4 +38,9 @@ content-type: application/json
 
 ###
 POST http://localhost:3000/saved_songs
+Content-Type: application/json
 
+{
+  "song_id": 3,
+  "user_id": 1
+}
