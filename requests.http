@@ -35,3 +35,7 @@ content-type: application/json
   "email": "frodo@email.com",
   "password": "password"
 }
+
+###
+POST http://localhost:3000/saved_songs
+
