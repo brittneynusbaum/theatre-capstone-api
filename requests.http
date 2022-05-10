@@ -36,7 +36,7 @@ content-type: application/json
   "password": "password"
 }
 
-###
+### create saved song
 POST http://localhost:3000/saved_songs
 Content-Type: application/json
 
@@ -44,3 +44,6 @@ Content-Type: application/json
   "song_id": 3,
   "user_id": 1
 }
+
+### index saved songs
+GET http://localhost:3000/saved_songs

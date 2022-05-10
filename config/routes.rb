@@ -19,4 +19,5 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   post "/saved_songs" => "saved_songs#create"
+  get "/saved_songs" => "saved_songs#index"
 end
