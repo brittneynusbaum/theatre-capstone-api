@@ -1,0 +1,2 @@
+class SavedSongsController < ApplicationController
+end
