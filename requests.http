@@ -15,3 +15,14 @@ GET http://localhost:3000/genres
 
 ### Index tempos
 GET http://localhost:3000/tempos
+
+### User sign up
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+  "name": "Frodo Baggins",
+  "email": "frodo@email.com",
+  "password": "password",
+  "password_confirmation": "password"
+}

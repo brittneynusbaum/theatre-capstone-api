@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   get "/genres" => "genres#index"
 
   get "tempos" => "tempos#index"
+
+  post "/users" => "users#create"
 end
