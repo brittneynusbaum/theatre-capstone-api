@@ -1,6 +1,5 @@
 GET http://localhost:3000/songs
 
-
 ### show song
 GET http://localhost:3000/songs/3
 
@@ -69,5 +68,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTIzOTU3M
 Content-Type: application/json
 
 {
-  "description": "changing my test note!"
+  "description": "changing my test note!!!!!!"
 }
+
+### update notes
+DELETE http://localhost:3000/notes/3
