@@ -32,7 +32,7 @@ POST http://localhost:3000/sessions
 content-type: application/json
 
 {
-  "email": "frodo@email.com",
+  "email": "sam@email.com",
   "password": "password"
 }
 
@@ -47,3 +47,18 @@ Content-Type: application/json
 
 ### index saved songs
 GET http://localhost:3000/saved_songs
+
+
+### index notes
+GET http://localhost:3000/notes
+Authorization: Bearer 
+
+### create note
+POST http://localhost:3000/notes
+Authorization: Bearer 
+Content-Type: application/json
+
+{
+  "description": "testing this note",
+  "saved_song_id": 2
+  }
