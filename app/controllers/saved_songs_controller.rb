@@ -1,5 +1,7 @@
 class SavedSongsController < ApplicationController
 
+  before_action :authenticate_user
+
   def create
     audition_song = SavedSong.new(
       song_id: params[:song_id],
@@ -10,8 +12,12 @@ class SavedSongsController < ApplicationController
   end
 
   def index
-    audition_songs = SavedSong.all
-    render json: audition_songs.as_json
+    audition_songs = SavedSong.where(user_id: current_user.id)
+    saved = []
+    audition_songs.each do |audition_song|
+      saved << Song.find_by(id: audition_song.song_id)
+    end
+    render json: saved.as_json
   end
   
 end
