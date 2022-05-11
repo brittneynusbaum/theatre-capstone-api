@@ -23,4 +23,5 @@ Rails.application.routes.draw do
 
   get "/notes" => "notes#index"
   post "/notes" => "notes#create"
+  patch "/notes/:id" => "notes#update"
 end

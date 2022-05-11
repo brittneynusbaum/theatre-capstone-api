@@ -15,6 +15,11 @@ class NotesController < ApplicationController
     render json: note.as_json
   end
 
-  
+  def update
+    note = Note.find(params[:id])
+    note.description = params[:description] || note.description
+    note.save
+    render json: note.as_json
+  end
 
 end
