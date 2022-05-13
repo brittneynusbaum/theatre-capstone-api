@@ -54,12 +54,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTIzOTU3M
 
 ### create note
 POST http://localhost:3000/notes
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI0NzU0MDl9.NaNTA8xWhPdb3jPI9jAWGWp1INBZvI-xRVKjklu7iac
 Content-Type: application/json
 
 {
-  "description": "testing this note",
-  "saved_song_id": 2
+  "description": "everything I know note",
+  "saved_song_id": 3
   }
 
 ### update notes
@@ -72,4 +72,4 @@ Content-Type: application/json
 }
 
 ### update notes
-DELETE http://localhost:3000/notes/3
+DELETE http://localhost:3000/notes/2

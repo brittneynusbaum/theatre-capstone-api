@@ -1,7 +1,11 @@
 class NotesController < ApplicationController
 
   def index
-    notes = Note.where(user_id: current_user.id)
+    audition_songs = SavedSong.where(user_id: current_user.id)
+    notes = []
+    audition_songs.each do |audition_song|
+      notes << Note.where(saved_song_id: audition_song.id)
+    end
     render json: notes.as_json
   end
 
