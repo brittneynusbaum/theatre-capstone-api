@@ -1,0 +1,5 @@
+{
+  id: @saved_song.id,
+  created_at: @saved_song.created_at,
+  updated_at: @saved_song.updated_at
+}

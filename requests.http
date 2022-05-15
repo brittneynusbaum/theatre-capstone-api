@@ -28,7 +28,7 @@ content-type: application/json
 
 ### User log in
 POST http://localhost:3000/sessions
-content-type: application/json
+content-type: application/json 
 
 {
   "email": "sam@email.com",
@@ -45,30 +45,30 @@ Content-Type: application/json
 }
 
 ### index saved songs
-GET http://localhost:3000/saved_songs
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTIzOTU3MDJ9.RA7GEgYvpU9p3x1xBP6Jv7EmZHeRVPdEtL2LyN2GBlQ
+GET http://localhost:3000/saved_songs.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI3MjYyMzl9.QJzgadnfzNfQf3frPGayI0FoMLZIl-MO7bTz21pg_1U
 
 ### index notes
-GET http://localhost:3000/notes
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTIzOTU3MDJ9.RA7GEgYvpU9p3x1xBP6Jv7EmZHeRVPdEtL2LyN2GBlQ
+GET http://localhost:3000/notes.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI1NDc1NjJ9.MAtG2kNvhR5wpSy0HuTeIAQMN2gANarVz7CqRp94-To
 
 ### create note
 POST http://localhost:3000/notes
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI0NzU0MDl9.NaNTA8xWhPdb3jPI9jAWGWp1INBZvI-xRVKjklu7iac
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI3MjYyMzl9.QJzgadnfzNfQf3frPGayI0FoMLZIl-MO7bTz21pg_1U
 Content-Type: application/json
 
 {
-  "description": "everything I know note",
-  "saved_song_id": 3
+  "description": "everything I know note 4",
+  "saved_song_id": 2
   }
 
 ### update notes
-PATCH http://localhost:3000/notes/2
+PATCH http://localhost:3000/notes/4
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTIzOTU3MDJ9.RA7GEgYvpU9p3x1xBP6Jv7EmZHeRVPdEtL2LyN2GBlQ
 Content-Type: application/json
 
 {
-  "description": "changing my test note!!!!!!"
+  "saved_song_id": 3
 }
 
 ### update notes

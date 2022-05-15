@@ -12,12 +12,12 @@ class SavedSongsController < ApplicationController
   end
 
   def index
-    audition_songs = SavedSong.where(user_id: current_user.id)
-    saved = []
-    audition_songs.each do |audition_song|
-      saved << Song.find_by(id: audition_song.song_id)
-    end
-    render json: saved.as_json
+    @audition_songs = SavedSong.where(user_id: current_user.id)
+    # saved = []
+    # audition_songs.each do |audition_song|
+    #   saved << Song.find_by(id: audition_song.song_id)
+    # end
+    render template: "saved_songs/index"
   end
   
 end

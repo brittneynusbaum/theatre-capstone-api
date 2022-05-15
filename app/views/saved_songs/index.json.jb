@@ -1,0 +1,9 @@
+@audition_songs.map do |audition_song|
+  {
+    id: audition_song.id,
+    song_id: audition_song.song_id,
+    user_id: audition_song.user_id,
+    notes: audition_song.notes,
+    title: audition_song.song.title
+  }
+end
