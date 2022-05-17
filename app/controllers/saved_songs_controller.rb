@@ -5,7 +5,7 @@ class SavedSongsController < ApplicationController
   def create
     audition_song = SavedSong.new(
       song_id: params[:song_id],
-      user_id: params[:user_id]
+      user_id: current_user.id
     )
     audition_song.save
     render json: audition_song.as_json
