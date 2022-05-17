@@ -26,6 +26,10 @@ content-type: application/json
   "password_confirmation": "password"
 }
 
+### User show
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI5MTAxNDJ9.IlsuY-gnjviin8sL9Mms_oYTGU4_yIjg6Tta8nOpuio
+
 ### User log in
 POST http://localhost:3000/sessions
 content-type: application/json 

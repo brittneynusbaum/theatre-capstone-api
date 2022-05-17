@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get "tempos" => "tempos#index"
 
   post "/users" => "users#create"
+  get "/users" => "users#index"
   post "/sessions" => "sessions#create"
 
   post "/saved_songs" => "saved_songs#create"
