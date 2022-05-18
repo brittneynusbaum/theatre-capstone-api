@@ -52,6 +52,10 @@ Content-Type: application/json
 GET http://localhost:3000/saved_songs.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI3MjYyMzl9.QJzgadnfzNfQf3frPGayI0FoMLZIl-MO7bTz21pg_1U
 
+### delete saved songs
+DELETE http://localhost:3000/saved_songs/7
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI5MjcyNzR9.ucdZplEJhOdvpNWVpTeV2kNwLNVUFpM1gN5COIbNISU
+
 ### index notes
 GET http://localhost:3000/notes.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI1NDc1NjJ9.MAtG2kNvhR5wpSy0HuTeIAQMN2gANarVz7CqRp94-To

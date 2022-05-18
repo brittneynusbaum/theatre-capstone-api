@@ -2,11 +2,6 @@ class NotesController < ApplicationController
 
   def index
     @audition_songs = SavedSong.where(user_id: current_user.id)
-    p current_user
-    # notes = []
-    # audition_songs.each do |audition_song|
-    #   notes << Note.where(saved_song_id: audition_song.id)
-    # end
     render template: "saved_songs/index"
   end
 

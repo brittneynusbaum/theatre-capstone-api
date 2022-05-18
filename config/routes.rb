@@ -26,5 +26,6 @@ Rails.application.routes.draw do
 
   post "/saved_songs" => "saved_songs#create"
   get "/saved_songs" => "saved_songs#index"
+  delete "/saved_songs/:id" => "saved_songs#destroy"
 
 end
