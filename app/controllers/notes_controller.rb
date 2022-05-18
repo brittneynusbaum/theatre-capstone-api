@@ -7,8 +7,8 @@ class NotesController < ApplicationController
 
   def create
     note = Note.new(
-      description: params[:description],
-      saved_song_id: params[:song_id],
+      description: params[:new_note][:description],
+      saved_song_id: params[:id],
       user_id: current_user.id
     )
     note.save

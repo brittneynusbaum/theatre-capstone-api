@@ -53,7 +53,7 @@ GET http://localhost:3000/saved_songs.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI3MjYyMzl9.QJzgadnfzNfQf3frPGayI0FoMLZIl-MO7bTz21pg_1U
 
 ### delete saved songs
-DELETE http://localhost:3000/saved_songs/7
+DELETE http://localhost:3000/saved_songs/8
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI5MjcyNzR9.ucdZplEJhOdvpNWVpTeV2kNwLNVUFpM1gN5COIbNISU
 
 ### index notes
