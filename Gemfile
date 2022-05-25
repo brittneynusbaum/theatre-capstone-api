@@ -9,6 +9,8 @@ gem "pry"
 gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
 gem 'jb'
+gem 'seed_dump'
+
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
