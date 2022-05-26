@@ -26,7 +26,7 @@ content-type: application/json
   "password_confirmation": "password"
 }
 
-### User show
+### User index
 GET http://localhost:3000/users
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI5MTAxNDJ9.IlsuY-gnjviin8sL9Mms_oYTGU4_yIjg6Tta8nOpuio
 
@@ -35,7 +35,7 @@ POST http://localhost:3000/sessions
 content-type: application/json 
 
 {
-  "email": "sam@email.com",
+  "email": "frodo@email.com",
   "password": "password"
 }
 
@@ -58,7 +58,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI5MjcyN
 
 ### index notes
 GET http://localhost:3000/notes.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI1NDc1NjJ9.MAtG2kNvhR5wpSy0HuTeIAQMN2gANarVz7CqRp94-To
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTM2Mjk5OTF9.Ybkd-SB3rpJa0pv0jay6V6oe_itxDLFRxHftcg0IPTk
 
 ### create note
 POST http://localhost:3000/notes
