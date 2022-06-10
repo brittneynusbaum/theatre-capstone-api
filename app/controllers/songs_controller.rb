@@ -1,7 +1,6 @@
 class SongsController < ApplicationController
 
   def index
-    # binding.pry
     composers = params[:composer].split(",")
     shows = params[:show].split(",")
     genres = params[:genre].split(",")
